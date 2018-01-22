@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Appic Tech Limited</title>
+  <meta name="description" content="We build applications for innovation and technology." />
+  <meta name="author" content="Appic Tech Limited@2018 All rights reserved" />
+  <!-- stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+</head>
+<body>
+  <header class="header clearfix">
+    <h3 class="text-muted">Appic Tech Limited</h3>
+    <nav>
+      <ul id="header_bar" class="nav nav-pills float-right">
+        <li class="nav-item">
+          <a id="header_item_home" class="nav-link" href="#/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="header_item_about_us" class="nav-link" href="#/about_us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a id="header_item_services" class="nav-link" href="#/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a id="header_item_products" class="nav-link" href="#/products">Products</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="impress" data-transition-duration="1000">
+    <div id="home" class="step" data-scale="1"
+      data-x="0" data-y="0" data-z="0"
+      data-rotate-x="30" data-rotate-y="0" data-rotate-z="0">
+      <img id="appic_image" src="img/appic.png"></img>
+      <ul id="slogan">
+        <li class="animate" data-color="#66CB76" data-hover-color="#44BE32">Innovation</li>
+          <li>&amp;</li>
+          <li class="animate" data-color="#448CCB" data-hover-color="#5C84AE">Creativity</li>
+      </ul>
+    </div>
+    <div id="about_us" class="step" data-scale="1"
+      data-x="0" data-y="1000" data-z="0"
+      data-rotate-x="15" data-rotate-y="0" data-rotate-z="0">
+			<h2>About us</h2>
+			<div>
+				<p>Appic is a software development company with focus on innovation and creativity. Through our technology, we hope to enable people to innovate and visualize their creativity.</p>
+		 </div>
+    </div>
+    <div id="services" class="step" data-scale="1"
+      data-x="0" data-y="2000" data-z="0"
+      data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <h2>Services</h2>
+			<div>
+				<p>We develop apps on android, iOS, react native and the web platform for clients. Email us at <a href="mailto:info@appic.com.hk">info@appic.com.hk</a> for more details.</p>
+			</div>
+    </div>
+    <div id="android" class="step skip nofocus" data-scale="1"
+      data-x="-500" data-y="2250" data-z="-500"
+      data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <img src="img/android.png" class="platform-icon" alt="Android"/>
+    </div>
+    <div id="apple" class="step skip nofocus" data-scale="1"
+      data-x="-200" data-y="2250" data-z="-500"
+      data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <img src="img/apple.png" class="platform-icon" alt="iOS"/>
+    </div>
+    <div id="react" class="step skip nofocus" data-scale="1"
+      data-x="100" data-y="2250" data-z="-500"
+      data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <img src="img/react.png" class="platform-icon" alt="React"/>
+    </div>
+    <div id="html5" class="step skip nofocus" data-scale="1"
+      data-x="400" data-y="2250" data-z="-500"
+      data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <img src="img/HTML5.png" class="platform-icon" alt="Web"/>
+    </div>
+    <div id="products" class="step" data-scale="1"
+      data-x="0" data-y="3500" data-z="0"
+      data-rotate-x="-15" data-rotate-y="0" data-rotate-z="0">
+      <h2>Products</h2>
+			<div>
+				<p>An app platform is currently under development. We will provide more information soon.</p>
+			</div>
+    </div>
+  </div>
+  <script src="js/impress.js"></script>
+  <script>
+  var api = impress();
+  api.init();
+  var canScroll = true;
+  var timeout;
+  document.addEventListener("wheel", function (e) {
+      if (timeout){
+        clearTimeout(timeout);
+      }
+      if (e.deltaY > 0){
+        timeout = setTimeout(function(){
+          api.next();
+        }, 500);
+      }
+      if (e.deltaY < 0){
+        timeout = setTimeout(function(){
+          api.prev();
+        }, 500);
+      }
+      return false;
+  }, true);
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

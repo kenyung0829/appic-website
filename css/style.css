@@ -1,0 +1,137 @@
+/* General elements  */
+
+body {
+	background: #EAEAEA;
+	font-size: 14px;
+	font-family: 'Electrolize', helvetica, arial, sans-serif;
+	color: #4F4F4F;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #464646;
+	font-weight: bold;
+	clear: both;
+}
+
+h1,h2 {
+	text-shadow: #FFFFFF 0px 2px 4px;
+}
+
+h1 { font-size: 3em; line-height:1.1; letter-spacing:0.05em; }
+h2 { font-size: 2em; line-height:1.1; letter-spacing:0.05em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+a {
+	text-decoration: none;
+}
+
+a, a:link, a:visited {
+	color: #0060A6;
+}
+
+a:hover, a:active {
+	color: #3279BD;
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+.step.nofocus {
+  pointer-events: none;
+}
+
+/** Header styles **/
+.header {
+  padding : 10px 10px 0 0;
+  font-size: 1.7em;
+}
+.header h3{
+  display: block;
+  float: left;
+  padding-top: 8px;
+  margin-left: 50px;
+}
+
+/** Appic page styles **/
+
+#home {
+  width: 1000px;
+  height: 600px;
+  margin-top: 50px;
+}
+
+#appic_image {
+  width: 600px;
+  height: 381px;
+  display: block;
+  margin: 0px auto 0px auto;
+}
+
+#slogan {
+  display: block;
+  position: relative;
+  width: 600px;
+  list-style-type: none;
+  font-size: 3.2em;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  color: rgb(118, 118, 118);
+  font-weight: bold;
+  text-shadow: rgb(255, 255, 255) 0px 2px 4px;
+  margin: 30px auto 0 auto;
+  font-variant: small-caps;
+}
+
+#slogan li {
+    display: block;
+    float: left;
+    margin: 0 20px 0 0px;
+}
+
+#about_us_tile {
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  //background-color: #ffffff;
+  padding-top: 50px;
+}
+
+#about_us_tile_text {
+
+}
+
+/** About us Page**/
+
+#about_us {
+  width: 800px;
+  height: 500px;
+  font-size:3em;
+}
+
+/** Services Page**/
+
+#services {
+  width: 800px;
+  height: 500px;
+  font-size:3em;
+}
+
+img.platform-icon {
+  height: 200px;
+  width: 200px;
+}
+
+/** Products Page**/
+
+#products {
+  width: 800px;
+  height: 500px;
+  font-size:3em;
+}
