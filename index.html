@@ -8,12 +8,11 @@
   <meta name="description" content="We build applications for innovation and technology." />
   <meta name="author" content="Appic Tech Limited@2018 All rights reserved" />
   <!-- stylesheets -->
+  <!-- electrolize font -->
   <link href="css/electrolize.css" rel="stylesheet" type="text/css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
 </head>
 <body>
   <header class="header clearfix">
@@ -93,28 +92,14 @@
   </div>
   <script src="js/impress.js"></script>
   <script>
-  var api = impress();
-  api.init();
-  var canScroll = true;
-  var timeout;
-  document.addEventListener("wheel", function (e) {
-      if (timeout){
-        clearTimeout(timeout);
-      }
-      if (e.deltaY > 0){
-        timeout = setTimeout(function(){
-          api.next();
-        }, 500);
-      }
-      if (e.deltaY < 0){
-        timeout = setTimeout(function(){
-          api.prev();
-        }, 500);
-      }
-      return false;
-  }, true);
+    var api = impress();
+    api.init();
   </script>
+  <script src="js/scroll.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/tether.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>
