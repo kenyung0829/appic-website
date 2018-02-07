@@ -1,22 +1,22 @@
 /* General elements  */
 
 body {
-	background: #EAEAEA;
-	font-size: 14px;
-	font-family: 'Electrolize', helvetica, arial, sans-serif;
-	color: #4F4F4F;
-	margin: 0;
-	padding: 0;
+  background: #EAEAEA;
+  font-size: 14px;
+  font-family: 'Electrolize', helvetica, arial, sans-serif;
+  color: #4F4F4F;
+  margin: 0;
+  padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	color: #464646;
-	font-weight: bold;
-	clear: both;
+  color: #464646;
+  font-weight: bold;
+  clear: both;
 }
 
 h1,h2 {
-	text-shadow: #FFFFFF 0px 2px 4px;
+  text-shadow: #FFFFFF 0px 2px 4px;
 }
 
 h1 { font-size: 3em; line-height:1.1; letter-spacing:0.05em; }
@@ -27,20 +27,20 @@ h5 { font-size: 1em; }
 h6 { font-size: 1em; }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a, a:link, a:visited {
-	color: #0060A6;
+  color: #0060A6;
 }
 
 a:hover, a:active {
-	color: #3279BD;
-	text-decoration: underline;
+  color: #3279BD;
+  text-decoration: underline;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .step.nofocus {
@@ -51,8 +51,8 @@ a:hover, a:active {
 .navbar {
   padding : 10px;
   font-size: 1.7em;
-	z-index: 1;
-	background-color: #EAEAEAEE;
+  z-index: 1;
+  background-color: rgba(234, 234, 234, 0.7);
 }
 
 .navbar h3{
