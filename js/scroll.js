@@ -1,4 +1,3 @@
-
 var canScroll = true;
 var timeout;
 document.addEventListener("wheel", function (e) {

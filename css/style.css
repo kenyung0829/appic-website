@@ -48,15 +48,27 @@ a:hover, a:active {
 }
 
 /** Header styles **/
-.header {
-  padding : 10px 10px 0 0;
+.navbar {
+  padding : 10px;
   font-size: 1.7em;
+	z-index: 1;
+	background-color: #EAEAEAEE;
 }
-.header h3{
+
+.navbar h3{
   display: block;
-  float: left;
   padding-top: 8px;
-  margin-left: 50px;
+  margin-left: 30px;
+}
+
+.navbar a{
+  text-align: center;
+}
+
+.normal {
+  width: 800px;
+  height: 500px;
+  font-size:3em;
 }
 
 /** Appic page styles **/
@@ -95,43 +107,8 @@ a:hover, a:active {
     margin: 0 20px 0 0px;
 }
 
-#about_us_tile {
-  height: 150px;
-  width: 200px;
-  text-align: center;
-  //background-color: #ffffff;
-  padding-top: 50px;
-}
-
-#about_us_tile_text {
-
-}
-
-/** About us Page**/
-
-#about_us {
-  width: 800px;
-  height: 500px;
-  font-size:3em;
-}
-
 /** Services Page**/
-
-#services {
-  width: 800px;
-  height: 500px;
-  font-size:3em;
-}
-
 img.platform-icon {
   height: 200px;
   width: 200px;
-}
-
-/** Products Page**/
-
-#products {
-  width: 800px;
-  height: 500px;
-  font-size:3em;
 }
